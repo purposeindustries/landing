@@ -1,0 +1,60 @@
+
+.menu-button{
+	background: url(../img/icon_menu.svg) no-repeat center center;
+	background-size: contain;
+}
+.upload-button{
+	background: url(../img/icon_upload.svg) no-repeat top left;
+	background-size: contain;
+}
+.logo-container{
+	background: url(../img/logo_with_domain.svg) no-repeat center center;
+	background-size: contain;
+}
+.heart-container{
+	background: url(../img/purple_heart_bg.svg) no-repeat center center;
+	background-size: contain;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin-bottom: -4em;
+}
+.drops-container{
+	background: url(../img/white_drops.svg) no-repeat top left;
+	background-size: contain;
+}
+.navbar-inner .container{
+	padding-top: 10px;
+}
+footer{
+	position: fixed;
+	bottom: 5%;
+	right: 2%;
+}
+.video-container:before{
+	content: "";
+	position: absolute;
+	top: 40px;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	background: url(../img/video_overlay_tile.png) repeat;
+}
+.video-container{
+	background: url(../img/video_overlay_tile.png) repeat;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -5000;
+}
+.video-elem{
+	width:100%;
+	height: 100%;
+	z-index: -10000;
+}
+.container{
+	background: transparent;
+	z-index: 10000;
+}
