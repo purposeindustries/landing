@@ -18,6 +18,7 @@
 	height: auto !important;
 	height: 100%;
 	margin-bottom: -4em;
+	opacity: 0.5;
 }
 .drops-container{
 	background: url(../img/white_drops.svg) no-repeat top left;
@@ -31,9 +32,13 @@ footer{
 	bottom: 5%;
 	right: 2%;
 }
+
 .video-container:before{
 	content: "";
 	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	top: 40px;
 	z-index: 1;
 	margin: 0;
