@@ -1,4 +1,44 @@
+@font-face {
+    font-family: 'museo_slab700';
+    src: url('fonts/museo_slab_700-webfont.eot');
+    src: url('fonts/museo_slab_700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo_slab_700-webfont.woff') format('woff'),
+         url('fonts/museo_slab_700-webfont.ttf') format('truetype'),
+         url('fonts/museo_slab_700-webfont.svg#museo_slab700') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('fonts/museosans_500-webfont.eot');
+    src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museosans_500-webfont.woff') format('woff'),
+         url('fonts/museosans_500-webfont.ttf') format('truetype'),
+         url('fonts/museosans_500-webfont.svg#museo_sans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_sans700';
+    src: url('fonts/museosans_700-webfont.eot');
+    src: url('fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museosans_700-webfont.woff') format('woff'),
+         url('fonts/museosans_700-webfont.ttf') format('truetype'),
+         url('fonts/museosans_700-webfont.svg#museo_sans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .menu-button{
 	background: url(../img/icon_menu.svg) no-repeat center center;
 	background-size: contain;
@@ -6,6 +46,9 @@
 .upload-button{
 	background: url(../img/icon_upload.svg) no-repeat top left;
 	background-size: contain;
+}
+.menu-button, .upload-button{
+	min-width: 36px;
 }
 .logo-container{
 	background: url(../img/logo_with_domain.svg) no-repeat center center;
@@ -39,7 +82,7 @@ footer{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	top: 40px;
+	top: 0px;
 	z-index: 1;
 	margin: 0;
 	padding: 0;
@@ -55,11 +98,21 @@ footer{
 	z-index: -5000;
 }
 .video-elem{
-	width:100%;
+	width: 100%;
 	height: 100%;
 	z-index: -10000;
 }
 .container{
 	background: transparent;
 	z-index: 10000;
+}
+.touch-device video.video-elem{
+	display:none;
+}
+.touch-device div.video-elem{
+	background: url(../img/bg_image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
