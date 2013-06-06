@@ -7,6 +7,8 @@ function setContentSize(){
 	$( ".main-content, .heart-container" )
 		.css( "min-height",  newHeight )
 		.css( "margin-top", height * 0.1 );
+	$( ".heart-inside" )
+		.css( "margin-top", height * 0.1 )
 }
 $(function(){
 	setTimeout(function(){

@@ -51,17 +51,17 @@
 	min-width: 36px;
 }
 .logo-container{
-	background: url(../img/logo_with_domain.svg) no-repeat center center;
+	background: url(../img/logo.png) no-repeat center center;
 	background-size: contain;
 }
 .heart-container{
-	background: url(../img/purple_heart_bg.svg) no-repeat center center;
+	background: url(../img/purple_heart_bg_with_drops.svg) no-repeat center center;
 	background-size: contain;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
 	margin-bottom: -4em;
-	opacity: 0.5;
+	opacity: 0.7;
 }
 .drops-container{
 	background: url(../img/white_drops.svg) no-repeat top left;
@@ -115,4 +115,49 @@ footer{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.notify-me{
+	position: absolute;
+	right: 47px;
+	top: 0px;
+}
+.heart-inside{
+	color: white;
+	margin: auto;
+	margin-top: 6%;
+	max-width: 350px;
+	overflow: hidden;
+	text-align: center;
+}
+.heart-inside h3{
+	font-family: museo_slab700;
+	font-size: 30px;
+}
+.heart-inside p{
+	font-family: museo_sans500;
+	font-size: 14px;
+}
+.heart-inside .hatespam{
+	font-family: museo_sans500;
+	font-size: 12px;
+}
+.input-container{
+	position: relative;
+}
+.input-container .notify-me{
+	background-image: inherit;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #2ecc71;
+	font-family:museo_slab700;
+	font-size: 14px;
+	color: white;
+	box-shadow:0px 3px 0px #1C8347;
+}
+.input-container input{
+	color: #B5B5B5;
+	height: 30px;
+	font-family: museo_sans500;
+	font-size: 18px;
+	width: 256px !important;
 }
