@@ -246,6 +246,8 @@ footer{
 }
 .thankyou .heart-container footer{
 	position: static;
+	margin: auto;
+	width: 200px;
 }
 footer .fb-like-box, footer>iframe{
 	margin-bottom: 10px;
