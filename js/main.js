@@ -22,7 +22,7 @@ $(function(){
 							.text( "You Love Porn" )
 						.end()
 						.find( "p" )
-							.html( "Yes! We knew you do :)<br />Let's deepen our relationship:" );
+							.html( "Yes! We knew you do :)<br />Follow us." );
 					$( ".navbar, .video-container" ).remove();
 					$( document.body ).addClass( "thankyou" );
 					$( "footer" ).appendTo( ".heart-container" ).removeClass( "pull-right" );

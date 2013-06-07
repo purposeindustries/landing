@@ -254,3 +254,9 @@ footer .fb-like-box, footer>iframe{
 	margin-bottom: 10px;
 	display: block;
 }
+.thankyou .heart-inside h3{
+	font-size: 38px;
+}
+.thankyou .heart-inside p{
+	font-size: 18px;
+}
