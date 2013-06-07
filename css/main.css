@@ -1,3 +1,6 @@
+html, body{
+/*	overflow:hidden;*/
+}
 @font-face {
     font-family: 'museo_slab700';
     src: url('fonts/museo_slab_700-webfont.eot');
@@ -55,13 +58,17 @@
 	background-size: contain;
 }
 .heart-container{
-	background: url(../img/purple_heart_bg_with_drops.svg) no-repeat center center;
+	background: url(../img/purple_heart_bg.svg) no-repeat center center;
 	background-size: contain;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -211px;
+	margin-left: -227px;
+	width: 454px;
+	height: 422px;
 	margin-bottom: -4em;
-	opacity: 0.7;
+	opacity: 0.9;
 }
 .drops-container{
 	background: url(../img/white_drops.svg) no-repeat top left;
@@ -71,9 +78,12 @@
 	padding-top: 10px;
 }
 footer{
-	position: fixed;
+	position: absolute;
 	bottom: 5%;
 	right: 2%;
+	padding: 10px 20px 10px 20px;
+	background-color: transparent;
+	border-radius: 8px;
 }
 
 .video-container:before{
@@ -91,10 +101,12 @@ footer{
 .video-container{
 	background: url(../img/video_overlay_tile.png) repeat;
 	overflow: hidden;
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	top: 0;
 	left: 0;
+	right: 0;
+	bottom: 0;
 	z-index: -5000;
 }
 .video-elem{
@@ -117,21 +129,26 @@ footer{
   background-size: cover;
 }
 .notify-me{
+	z-index: 20000;
 	position: absolute;
-	right: 47px;
-	top: 0px;
+	right: 37px;
+	top: -2px;
+	width: 90px;
+	height: 35px;
 }
 .heart-inside{
 	color: white;
 	margin: auto;
-	margin-top: 6%;
-	max-width: 350px;
+	margin-top: 60px;
+	max-width: 410px;
 	overflow: hidden;
 	text-align: center;
 }
 .heart-inside h3{
 	font-family: museo_slab700;
 	font-size: 30px;
+	margin-top: 12px;
+	margin-bottom: 10px;
 }
 .heart-inside p{
 	font-family: museo_sans500;
@@ -139,12 +156,18 @@ footer{
 }
 .heart-inside .hatespam{
 	font-family: museo_sans500;
-	font-size: 12px;
+	font-size: 11px;
+	width: 257px;
+	margin: auto;
+	line-height: 16px;
 }
 .input-container{
 	position: relative;
+	padding-left: 35px;
+	padding-right: 44px;
 }
 .input-container .notify-me{
+	border-bottom-color: transparent;
 	background-image: inherit;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -155,9 +178,76 @@ footer{
 	box-shadow:0px 3px 0px #1C8347;
 }
 .input-container input{
-	color: #B5B5B5;
-	height: 30px;
+	opacity: 1;
+	background-color: white;
+	color: #333;
+	height: 36px;
 	font-family: museo_sans500;
 	font-size: 18px;
-	width: 256px !important;
+	width: 100% !important;
+	-webkit-box-shadow: initial;
+	-moz-box-shadow: initial;
+	box-shadow: initial;
+	border: 0;
+
+}
+.navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	width: 100%;
+}
+
+.navbar-inner{
+	background: white;
+	border-bottom: 1px solid #e4dbe;
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+}
+@media
+  only screen and (-webkit-min-device-pixel-ratio : 2),
+  only screen and (min-device-pixel-ratio : 2) {
+    .logo-container{
+			background: url(../img/logo@2x.png) no-repeat center center;
+			background-size: contain;
+		}
+		
+  }
+@media only screen and (max-device-width: 480px) {
+	.notify-me{
+			right: 44px;
+			top: -5px;
+		}
+	.heart-container{
+		background: none;
+		width: 100%;
+		position: static;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.menu-button, .upload-button{
+		display: none;
+	}
+	.heart-inside{
+		margin-top: 70%;
+	}
+	footer{
+		position: static;
+	}
+}
+.thankyou{
+	background-color: #8e44ad;
+}
+.fb-like-box{
+	overflow: hidden;
+	width: 170px;
+	position: relative;
+	left: -10px;
+}
+.thankyou>footer{
+	display:none;
+}
+.thankyou .heart-container footer{
+	position: static;
+}
+footer .fb-like-box, footer>iframe{
+	margin-bottom: 10px;
+	display: block;
 }

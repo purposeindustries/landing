@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        
         <meta property="og:title" content="weloveporn" />
         <meta property="og:type" content="company" />
         <meta property="og:site_name" content="weloveporn" />
@@ -63,24 +63,23 @@
             <div class="video-elem">&nbsp;</div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="offset3 span6 heart-container">
-                    <div class="heart-inside">
-                        <h3>Getting the thing done</h3>
-                        <p>lorem ipsum dolorem</p>
-                        <div class="input-container">
-                            <input class="span3" type="text">
-                            <button class="btn notify-me">Notify me</button>
-                        </div>
-                        <div class="hatespam">We hate spam, we will never do that, baby!</div>
-                    </div>
+        
+        <div class="heart-container">
+            <div class="heart-inside">
+                <h3>We Love Porn</h3>
+                <p>We know you love it too :) So we decided to embark on a journey to bring you the most amazing porn experience to the device of your choice. Let us notify you when we launch.</p>
+                <div class="input-container">
+                    <input class="span3 mail-input" type="text">
+                    <button class="btn notify-me">I'm in</button>
                 </div>
-                <div class="span3"></div>
+                <div class="hatespam">We hate spam as much as you do. So we strictly follow a no spam policy. Promise ;)</div>
             </div>
+        </div>
+        
         </div>
 
         <footer class="pull-right">
+            <div class="fb-like-box" data-href="https://www.facebook.com/WeLovePorn" data-width="292" data-show-faces="false" data-stream="false" data-show-border="false" data-header="false"></div>
             <a href="https://twitter.com/welovepornco" class="twitter-follow-button" data-show-count="false">Follow @welovepornco</a>
             
         </footer>
@@ -91,14 +90,25 @@
         <script src="js/main.js"></script>
 
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-41562123-1', 'weloveporn.co');
+              ga('send', 'pageview');
+
 
         </script>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
         </script>
-        
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=143469492510442";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>        
     </body>
 </html>
