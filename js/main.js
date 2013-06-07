@@ -9,6 +9,7 @@ $(function(){
 		if( mail ){
 			$.ajax({
 				url: "/add",
+				type: "POST",
 				data: {
 					mail: mail
 				},
