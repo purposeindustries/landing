@@ -167,6 +167,7 @@ footer{
 	padding-right: 44px;
 }
 .input-container .notify-me{
+	border: 0;
 	border-bottom-color: transparent;
 	background-image: inherit;
 	margin-top: 5px;
